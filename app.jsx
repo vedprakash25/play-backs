@@ -18,6 +18,17 @@ app.get("/api", (req, res) => {
   res.send(response);
 });
 
+app.get("/api/blogs/:id", (req, res) => {
+  const blogId = parseInt(req.params.id);
+  const blog = data.find((blog) => blog.id === blogId);
+
+  if (blog) {
+    res.json(blog);
+  } else {
+    res.status(404).json({ error: "Blog not found" });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
