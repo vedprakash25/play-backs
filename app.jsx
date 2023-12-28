@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "./screens")));
 
 app.get("/", (req, res) => {
-  res.send("sdfjlfj");
+  res.send("homepage text");
 });
 
 app.get("/api", (req, res) => {
