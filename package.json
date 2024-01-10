@@ -8,7 +8,11 @@
     "start": "node index.jsx",
     "serve": "nodemon index.jsx"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "railway",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
